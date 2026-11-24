@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>장서연 | 자기소개</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background-color:#14213d;background-image:linear-gradient(90deg,rgba(60,85,140,.55) 50%,transparent 50%),linear-gradient(rgba(60,85,140,.55) 50%,transparent 50%);background-size:56px 56px;color:#3a3733;font-family:"Jua","Malgun Gothic","Apple SD Gothic Neo",sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;overflow:hidden;position:relative}
+.stage{position:relative;width:min(86vw,350px);height:min(72vh,490px);cursor:pointer;-webkit-tap-highlight-color:transparent;outline:none}
+.card{position:absolute;inset:0;background:#fff;border-radius:40px;border:4px solid #fff;box-shadow:0 14px 34px rgba(90,100,150,.2),inset 0 -6px 0 rgba(0,0,0,.04);overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform .55s cubic-bezier(.5,1.5,.5,1),opacity .4s}
+.card::before{content:"";position:absolute;left:-25%;top:-120px;width:150%;height:250px;border-radius:50%;background:var(--c)}
+.card>*{position:relative}
+.card.gone{transform:translateX(-130%) rotate(-14deg);opacity:0;pointer-events:none}
+.card.s1{transform:translateY(12px) rotate(3deg) scale(.96)}
+.card.s2{transform:translateY(22px) rotate(-3deg) scale(.92)}
+.card.s3{transform:translateY(22px) scale(.92);opacity:0}
+.tag{margin-top:26px;font-size:1.15rem;background:#fff;padding:5px 18px;border-radius:999px;box-shadow:0 3px 0 rgba(0,0,0,.07)}
+.body{flex:1;width:100%;padding:20px 24px 34px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+h1{margin:0 0 22px;font-size:3.4rem;font-weight:400;letter-spacing:.06em;color:#fff;-webkit-text-stroke:7px #6fc79a;paint-order:stroke fill;text-shadow:0 5px 0 #6fc79a;line-height:1.1}
+.row{display:flex;align-items:center;justify-content:space-between;width:100%;margin:6px 0;padding:8px 8px 8px 8px;background:#f0faf4;border-radius:999px;font-size:1.15rem}
+.row b{font-weight:400;background:#bfe9d1;border-radius:999px;padding:5px 14px;font-size:1rem}
+.row span{padding-right:14px}
+.pics{display:flex;gap:12px;width:100%}
+.pics figure{margin:0;flex:1;background:#fff7f9;border-radius:26px;padding:8px 8px 12px;box-shadow:0 4px 0 rgba(0,0,0,.05)}
+.pics svg{width:100%;height:auto;border-radius:18px;display:block}
+figcaption{margin-top:8px;font-size:1.05rem}
+svg.big{width:92%;height:auto;filter:drop-shadow(0 6px 0 rgba(0,0,0,.07))}
+.name{margin-top:12px;font-size:1.7rem;background:#fff0c9;padding:4px 22px;border-radius:999px}
+.hint{position:absolute;bottom:14px;font-size:.9rem;color:#9a958d;animation:nudge 1.4s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(7px)}}
+.dots{display:flex;gap:8px}
+.dots i{width:10px;height:10px;border-radius:999px;background:#fff;transition:.35s}
+.dots i.on{width:28px;background:#6fc79a}
+@media (prefers-reduced-motion:reduce){.card,.dots i{transition:none}.hint{animation:none}}
+</style>
+</head>
+<body>
+<div class="stage" id="stage" tabindex="0" aria-label="자기소개 카드, 누르면 다음 카드로 넘어가요">
+
+  <section class="card" style="--c:#b7e6cb">
+    <div class="tag">안녕! 나는</div>
+    <div class="body">
+      <h1>장서연</h1>
+      <div class="row"><b>생년월일</b><span>2007년 5월 28일</span></div>
+      <div class="row"><b>혈액형</b><span>O형</span></div>
+      <div class="row"><b>MBTI</b><span>INFP</span></div>
+    </div>
+    <span class="hint">눌러서 넘기기 ›</span>
+  </section>
+
+  <section class="card" style="--c:#ffd9e2">
+    <div class="tag">내 취미</div>
+    <div class="body">
+      <div class="pics">
+        <figure>
+          <svg viewBox="0 0 160 130" aria-hidden="true">
+            <rect width="160" height="130" fill="#f3f0ec"/>
+            <rect y="95" width="160" height="35" fill="#e2d6c6"/>
+            <rect x="14" y="14" width="42" height="42" rx="4" fill="#cfe6f5" stroke="#fff" stroke-width="5"/>
+            <path d="M35 14v42M14 35h42" stroke="#fff" stroke-width="3"/>
+            <rect x="84" y="16" width="26" height="32" rx="3" fill="#fff" stroke="#d9c7b0" stroke-width="3"/>
+            <circle cx="97" cy="32" r="7" fill="#f6c9c9"/>
+            <rect x="62" y="64" width="86" height="34" rx="9" fill="#fff" stroke="#d8d3cc" stroke-width="2"/>
+            <rect x="62" y="64" width="26" height="22" rx="8" fill="#f6c9c9"/>
+            <rect x="66" y="98" width="5" height="9" fill="#bda98f"/><rect x="139" y="98" width="5" height="9" fill="#bda98f"/>
+            <path d="M128 40v18" stroke="#9a8b78" stroke-width="3"/><path d="M118 40l10-12 10 12z" fill="#ffe9a8"/>
+            <rect x="16" y="86" width="20" height="18" rx="4" fill="#e7a98b"/>
+            <path d="M26 86c-8-8-8-18 0-22 8 4 8 14 0 22z" fill="#8fbf8f"/>
+          </svg>
+          <figcaption>방 꾸미기</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 160 130" aria-hidden="true">
+            <rect width="160" height="130" fill="#fbf1e6"/>
+            <ellipse cx="62" cy="104" rx="46" ry="8" fill="#ecdcc8"/>
+            <path d="M20 66h84l-8 36H28z" fill="#fff" stroke="#d8c8b0" stroke-width="3"/>
+            <ellipse cx="62" cy="66" rx="42" ry="9" fill="#fdf6ea" stroke="#d8c8b0" stroke-width="3"/>
+            <path d="M112 100l18-62" stroke="#c9b394" stroke-width="5" stroke-linecap="round"/>
+            <ellipse cx="108" cy="46" rx="9" ry="16" transform="rotate(16 108 46)" fill="none" stroke="#c9b394" stroke-width="3"/>
+            <path d="M122 118h26l-3-18h-20z" fill="#f2c27b"/>
+            <path d="M120 100c0-14 28-14 28 0z" fill="#f9dbe0"/>
+            <circle cx="134" cy="84" r="5" fill="#e86f7f"/>
+          </svg>
+          <figcaption>베이킹</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" style="--c:#ffeab8">
+    <div class="tag">좋아하는 음식</div>
+    <div class="body">
+      <svg class="big" viewBox="0 0 200 160" aria-hidden="true">
+        <path d="M70 40c-8-14 8-18 0-30M100 44c-8-14 8-18 0-32M130 40c-8-14 8-18 0-30" fill="none" stroke="#d6dde6" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="100" cy="76" rx="76" ry="16" fill="#8d6e63"/>
+        <ellipse cx="100" cy="76" rx="68" ry="12" fill="#d9482b"/>
+        <ellipse cx="78" cy="75" rx="17" ry="8" fill="#f2b872" stroke="#c98a47" stroke-width="2"/>
+        <ellipse cx="116" cy="73" rx="15" ry="7" fill="#f6c88a" stroke="#c98a47" stroke-width="2"/>
+        <circle cx="100" cy="79" r="8" fill="#f3e2a6"/>
+        <rect x="132" y="70" width="14" height="6" rx="3" fill="#f08a24" transform="rotate(-15 139 73)"/>
+        <path d="M24 80c0 40 22 60 76 60s76-20 76-60z" fill="#6d4c41"/>
+        <path d="M24 80c2 14 8 24 16 32h120c8-8 14-18 16-32z" fill="#7b5a4d"/>
+        <path d="M14 84h18M168 84h18" stroke="#6d4c41" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <div class="name">닭볶음탕</div>
+    </div>
+  </section>
+
+  <section class="card" style="--c:#e4dcff">
+    <div class="tag">좋아하는 색깔</div>
+    <div class="body">
+      <svg class="big" viewBox="0 0 200 140" aria-hidden="true">
+        <rect width="200" height="140" rx="30" fill="#cfe4f7"/>
+        <path d="M44 100a24 24 0 0 1 8-46 34 34 0 0 1 64-6 28 28 0 0 1 40 24 20 20 0 0 1-4 28z" fill="#dbe6f2"/>
+        <path d="M40 96a24 24 0 0 1 8-46 34 34 0 0 1 64-6 28 28 0 0 1 40 24 20 20 0 0 1-4 28z" fill="#fff"/>
+        <circle cx="82" cy="78" r="3" fill="#aab6c4"/><circle cx="114" cy="78" r="3" fill="#aab6c4"/>
+        <circle cx="74" cy="86" r="5" fill="#ffd9e2"/><circle cx="122" cy="86" r="5" fill="#ffd9e2"/>
+        <path d="M92 86q5 5 10 0" fill="none" stroke="#aab6c4" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div class="name" style="background:#fff;box-shadow:0 3px 0 rgba(0,0,0,.08)">하얀색</div>
+    </div>
+  </section>
+</div>
+
+<div class="dots" id="dots"></div>
+
+<script>
+var cards=[].slice.call(document.querySelectorAll('.card')),cur=0,dots=document.getElementById('dots');
+cards.forEach(function(){dots.appendChild(document.createElement('i'))});
+function render(){
+  cards.forEach(function(c,i){
+    var d=i-cur;
+    c.className='card '+(d<0?'gone':d===0?'':'s'+Math.min(d,3));
+    c.style.zIndex=cards.length-Math.abs(d);
+  });
+  [].forEach.call(dots.children,function(x,i){x.className=i===cur?'on':''});
+}
+function next(){cur=(cur+1)%cards.length;render()}
+function prev(){cur=(cur-1+cards.length)%cards.length;render()}
+document.getElementById('stage').addEventListener('click',next);
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();next()}if(e.key==='ArrowLeft')prev()});
+render();
+</script>
+</body>
+</html>
